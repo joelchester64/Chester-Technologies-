@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#07130f"><meta name="description" content="CHESTER TECHNOLOGIES — Global digital technology and services platform.">
+<title>CHESTER TECHNOLOGIES</title><link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div class="ambient"></div>
+<header class="topbar"><a class="brand" href="#"><span class="brand-mark">C</span><span>CHESTER<span class="green"> TECHNOLOGIES</span><small>BUILDING TECHNOLOGY WITHOUT LIMITS</small></span></a><div class="top-actions"><span id="topUser" class="muted"></span><button id="logoutBtn" class="btn btn-ghost hidden">Sign out</button></div></header>
+<main>
+<section id="authView" class="auth-layout">
+ <div class="hero"><div class="eyebrow"><i></i> YOUR DIGITAL WORLD, CONNECTED</div><h1>Technology for<br><span class="gradient">what comes next.</span></h1><p>One platform for intelligent tools, digital services and the technology that moves ideas forward.</p>
+ <div class="hero-points"><span>✦ AI-powered tools</span><span>✦ Connected services</span><span>✦ Built for everyone</span></div>
+ <div class="hero-orbit"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="core">C<span>+</span></div><b class="orb-label l1">GENIUS</b><b class="orb-label l2">CONNECT</b><b class="orb-label l3">CREATE</b></div>
+ </div>
+ <div class="auth-card"><div class="tabs"><button class="tab active" data-tab="login">Sign in</button><button class="tab" data-tab="register">Create account</button></div>
+ <form id="loginForm" class="form"><h2>Welcome back</h2><p class="muted">Sign in to your CHESTER account.</p><label>Email address<input name="email" type="email" required autocomplete="email" placeholder="you@example.com"></label><label>Password<input name="password" type="password" required autocomplete="current-password" placeholder="Your password"></label><button class="btn btn-primary full">Sign in <span>→</span></button><div class="message" id="loginMsg"></div></form>
+ <form id="registerForm" class="form hidden"><h2>Create your account</h2><p class="muted">Join the CHESTER TECHNOLOGIES platform.</p><label>Full name<input name="name" required maxlength="80" placeholder="Your name"></label><label>Email address<input name="email" type="email" required placeholder="you@example.com"></label><label>Phone number <small class="muted">(optional)</small><input name="phone" placeholder="+256..."></label><label>Password<input name="password" type="password" required minlength="10" placeholder="At least 10 characters"></label><button class="btn btn-primary full">Create account <span>→</span></button><div class="message" id="registerMsg"></div></form>
+ <div class="secure-note">⌑ &nbsp;Your account is protected with secure authentication.</div></div>
+</section>
+<section id="appView" class="app-layout hidden">
+ <aside class="sidebar"><div class="side-label">WORKSPACE</div><button class="nav active" data-page="overview">▦ <span>Overview</span></button><button class="nav" data-page="departments">✧ <span>Departments</span></button><button class="nav" data-page="orders">▤ <span>My orders</span></button><button class="nav" data-page="support">◉ <span>Help & support</span></button><div id="adminNav" class="hidden"><div class="side-label admin-label">ADMINISTRATION</div><button class="nav" data-page="admin">⌘ <span>Admin overview</span></button><button class="nav" data-page="users">♙ <span>Manage users</span></button><button class="nav" data-page="tickets">▧ <span>Support tickets</span></button><button class="nav" data-page="adminOrders">▤ <span>Manage orders</span></button><button class="nav" data-page="settings">⚙ <span>Platform settings</span></button></div><div class="side-bottom"><div class="mini-brand">C<span>H</span></div><small>CHESTER TECHNOLOGIES<br>Platform preview</small></div></aside>
+ <section class="content"><div class="page-head"><div><div class="eyebrow">CHESTER WORKSPACE</div><h1 id="pageTitle">Overview</h1><p id="pageSubtitle" class="muted">Your account at a glance.</p></div><div class="avatar" id="avatar">C</div></div><div id="pageContent"></div></section>
+</section>
+</main>
+<footer><span>© <span id="year"></span> CHESTER TECHNOLOGIES</span><span>Futuristic by design. Built for everyone.</span></footer>
+<div id="toast" class="toast"></div>
+<script src="/app.js"></script>
+</body></html>
